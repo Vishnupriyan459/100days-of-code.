@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-40</title>
+    <style>
+       
+        
+        .container{
+            display:grid;
+            gap:15px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: "h h h" "sb1 mn sb2" "f f f";
+        }
+        .item{
+            
+            justify-content: center;
+            align-items: center;
+            
+            text-align: center;
+            
+            padding: 70px;
+            color: aliceblue;
+            font-size: x-large; 
+        }
+        .item1{
+            grid-area: h;
+            grid-column-start: 1;
+            grid-column-end: -1;
+            background-color:black;
+            font-size: 5rem;
+            padding: 5px;
+            height: 5rem;
+
+        }
+       
+    </style>
+</head>
+<body>
+       
+    <div class="container">
+        <div class="item item1">The Hindu News</div>
+        
+        <div class="item item2">This box 2</div>
+        <div class="item item3">This box 3</div>
+        <div class="item item4">This box 4</div>
+        <div class="item item5">This box 5</div>
+        <div class="item item6">This box 6</div>
+        <div class="item item7">This box 7</div>
+        <div class="item item8">This box 8</div>
+    </div>
+    
+</body>
+</html>

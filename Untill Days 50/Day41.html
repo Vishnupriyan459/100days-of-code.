@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-40</title>
+    <style>
+       
+        *{
+            margin: 0%;
+        }
+        p{
+            font-size: 5rem;
+            color:crimson;
+            background-color: black;
+        }
+        .container{
+            display:grid;
+           
+            grid-template-columns: 1fr 2fr 1fr;
+            
+            
+            grid-template-areas: "sb1 mn sb2" "f f f";
+        }
+        .item{
+            
+            justify-content: start;
+            align-items: center;           
+            padding: 70px;
+            color: black;
+            font-size: x-large; 
+        }
+        .item1{
+            grid-area: sb1;
+            background-color:black;
+            font-size: 3rem;
+            padding: 5px;
+            color:crimson;
+        }
+        .item2{
+            grid-area: sb1;
+            color: aliceblue;
+            text-align: center;
+            font-size: 2rem;
+            background-color: rgb(15, 13, 13);
+            align-self: stretch;
+            
+            
+        }
+        .item3{
+            grid-area: mn;
+            background-color: cornflowerblue;
+            text-align: center;
+            font-size: 2rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <P>The National Today</P>   
+    <div class="container">
+        <div class="item item1">
+        </div>
+        <div class="item item2"></div>
+        <div class="item item3">Today News</div>
+        
+        
+    </div>
+    
+</body>
+</html>
